@@ -16,4 +16,5 @@ steps:
     terraform init
     terraform validate
   displayName: 'Validate Terraform Configuration'
-  workingDirectory: './path/to/your/terraform/files'
+  workingDirectory: './'
+'
