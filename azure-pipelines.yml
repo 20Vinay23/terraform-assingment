@@ -5,10 +5,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NuGetCommand@2
+- task: TerraformInstaller@0
   inputs:
-    command: 'restore'
-    restoreSolution: '**/*.sln'
-- task: UseTerraform@0
+    terraformVersion: 'latest'
+- task: TerraformTaskV2@2
   inputs:
+    provider: 'azurerm'
     command: 'validate'
+    workingDirectory: './path/to/your/terraform/files'
