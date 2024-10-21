@@ -17,4 +17,3 @@ steps:
     terraform validate
   displayName: 'Validate Terraform Configuration'
   workingDirectory: './'
-'
