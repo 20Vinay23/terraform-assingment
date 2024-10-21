@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Default # Ensure this matches the name of your self-hosted agent pool
 
 steps:
 - script: |
